@@ -21,6 +21,9 @@ export class Satellite {
 			return false;
 		}
    }
+   addStripes(arr): boolean {
+    return arr.indexOf(this) % 2 === 0 && this.type !== 'Space Debris';
+  }
 
 }
 
