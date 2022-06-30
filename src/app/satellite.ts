@@ -15,8 +15,15 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
+		if(this.type === "Space Debris"){
 		return true;
+		}else{
+			return false;
+		}
    }
+   addStripes(arr): boolean {
+    return arr.indexOf(this) % 2 === 0 && this.type !== 'Space Debris';
+  }
 
 }
 
